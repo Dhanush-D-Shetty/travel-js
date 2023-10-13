@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelTrekker</title>
+    <link rel="stylesheet" href="travel.css">
+<link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon">
+    <!-- font awesome icon -->
+    <script src="https://kit.fontawesome.com/983f6f6343.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+
+
+                           <!-- navbar -->
+    <nav>
+        <div class="fa-solid fa-bars"  id="menu-bar"></div>
+        <div class="logo"><span>T</span>ravel</div>
+
+        <div class="options">
+            <a href="#books">Books</a>
+            <a href="#services">services</a>
+            <a href="#gallery">gallery</a>
+            <a href="#review">reviews</a>
+            <a href="#contact">contact</a>
+        </div>
+        <div class="icons">
+            <i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
+            <i class="fa-solid fa-user" id="login-btn"></i>
+        </div>
+        <form action=""  method="get" class="search-bar-container">
+            <input type="search" name="search-bar" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fa-solid fa-magnifying-glass"></label>
+        </form>   
+    </nav>
+
+    <!-- Log in form -->
+    <div class="login-form-container">
+        <i class="fa-solid fa-x" id="form-closer"></i>
+        <form action="">
+            <h3>login</h3>
+            <input type="email"     class="box"     placeholder="enter your email">
+            <input type="password"  class="box"    placeholder="enter your Password">
+            <input type="submit"    class="btn"      value="login-now">
+            <input type="checkbox"   id="remember" >
+            <label for="remember">remember me</label>
+            <p>forgot password? <a href="#">click here</a>   </p>
+            <p>don't have account ? <a href="#">register now</a>   </p>
+        </form>
+    </div>
+
+    <!-- home section -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>adventure is worth while</h3>
+            <p>discover new place with us, adventure awaits</p>
+            <a href="#" class="btn">discover more</a>
+        </div>
+
+        <div class="controls">
+            <span class="vid-btn active" data-src="./images/1.mp4"></span>
+            <span class="vid-btn" data-src="./images/2.mp4"></span>
+            <span class="vid-btn" data-src="./images/3.mp4"></span>
+            <span class="vid-btn" data-src="./images/4.mp4"></span>
+            <span class="vid-btn" data-src="./images/5.mp4"></span>
+            <span class="vid-btn" data-src="./images/6.mp4"></span>
+        </div>
+
+        <div class="video-container">
+            <video src="./images/1.mp4" id="video-slider" autoplay loop muted ></video>
+        </div>
+    </section>
+
+
+    <!-- book section -->
+    <section class="books" id="books">
+        <h1 class="heading">
+            <span>b</span>
+            <span>o</span>
+            <span>o</span>
+            <span>k</span>
+            <span class="space"> </span>
+            <span>s</span>
+            <span>h</span>
+            <span>o</span>
+            <span>w</span>
+        </h1>
+
+        <div class="row">
+            <div class="image">
+                <img src="./images/travel.jpg" alt="">
+            </div>
+            <form action="">
+                <div class="inputbox">
+                    <h3>where to</h3>
+                    <input type="text" placeholder="place name">
+                </div>
+                <div class="inputbox">
+                    <h3>how many</h3>
+                    <input type="number" placeholder="number of guests">
+                </div>
+                <div class="inputbox">
+                    <h3>arrival</h3>
+                    <input type="date">
+                </div>
+                <div class="inputbox">
+                    <h3>leaving</h3>
+                    <input type="date" >
+                </div>
+                <input type="submit" class="btn" value="book now">
+            </form>
+        </div>
+    </section>
+
+
+
+                                    <!-- package section -->
+    <section id="packages" class="packages">
+        <h1 class="heading">
+            <span>p</span>
+            <span>a</span>
+            <span>c</span>
+            <span>k</span>
+            <span>a</span>
+            <span>g</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="images/karnataka1.jpg" alt="mysore palace">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i>     Karnataka , Bharath</h3>
+                    <p>Karnataka is a state in southwest India with Arabian Sea coastlines. The capital, Bengaluru (formerly Bangalore), is a high-tech hub known for its shopping and nightlife. To the southwest, Mysore is home to lavish temples including Mysore Palace, former seat of the region’s maharajas.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">Rs 86,999.00 <span>Rs 1,25,000.00</span></div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/unity.jpg" alt="statue of unity">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i>     gujarath,Bharath</h3>
+                    <p>Srinagar, with its renowned Dal Lake and Mughal Gardens, Gulmarg, Pahalgam, Bhaderwah, Patnitop, and Jammu are all popular tourist destinations in Jammu</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">Rs 35,000.00 <span>Rs 42,000.00</span></div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/jammu.jpg" alt="Jammu and Kashmir">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i>  Jammu and Kashmir ,Bharath</h3>
+                    <p>Srinagar, with its renowned Dal Lake and Mughal Gardens, Gulmarg, Pahalgam, Bhaderwah, Patnitop, and Jammu are all popular tourist destinations in Jammu and kashmir</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">Rs 98,999.00 <span>Rs 1,15,000.00</span></div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/nepal.jpg" alt="Nepal">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i>  Nepal</h3>
+                    <p>Nepal, officially the Federal Democratic Republic of Nepal, is a landlocked country in South Asia. It is mainly situated in the Himalayas, but also includes parts of the Indo-Gangetic Plain.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">Rs 1,15,999.00 <span>Rs 1,75,000.00</span></div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/Kedarnath.jpg" alt="kedarnath">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i>     Uttarakand, Bharat</h3>
+                    <p>Uttarakhand, a state in northern India crossed by the Himalayas, is known for its Hindu pilgrimage sites. Rishikesh, a major centre for yoga study, was made famous by the Beatles’ 1968 visit. The city hosts the evening Ganga Aarti, a spiritual gathering on the sacred Ganges River. </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">Rs 75,459.00 <span>Rs 85,000.00</span></div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+                                       <!--    services           -->
+    <secton class="services" id="services">
+        <h1 class="heading">
+            <span>s</span>
+            <span>e</span>
+            <span>r</span>
+            <span>v</span>
+            <span>i</span>
+            <span>c</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-hotel"></i>
+                <h3>affordable hotels</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio amet impedit porro repellat id, dolorum officiis recusandae labore fugiat esse, nisi deleniti dolore illo numquam et suscipit error ipsa beatae?</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-utensils"></i>
+                <h3>foods and drinks</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio amet impedit porro repellat id, dolorum officiis recusandae labore fugiat esse, nisi deleniti dolore illo numquam et suscipit error ipsa beatae?</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-bullhorn"></i>
+                <h3>safety guides</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio amet impedit porro repellat id, dolorum officiis recusandae labore fugiat esse, nisi deleniti dolore illo numquam et suscipit error ipsa beatae?</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-globe-asia"></i>
+                <h3>around the world</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio amet impedit porro repellat id, dolorum officiis recusandae labore fugiat esse, nisi deleniti dolore illo numquam et suscipit error ipsa beatae?</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-plane"></i>
+                <h3>fastest travel</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio amet impedit porro repellat id, dolorum officiis recusandae labore fugiat esse, nisi deleniti dolore illo numquam et suscipit error ipsa beatae?</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-hiking"></i>
+                <h3>adventure</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio amet impedit porro repellat id, dolorum officiis recusandae labore fugiat esse, nisi deleniti dolore illo numquam et suscipit error ipsa beatae?</p>
+            </div>
+        </div>
+
+    </secton>
+
+
+                                               <!--  Gallery  -->
+    <secton class="gallery" id="gallery">
+        <h1 class="heading">
+            <span>g</span>
+            <span>a</span>
+            <span>a</span>
+            <span>l</span>
+            <span>l</span>
+            <span>e</span>
+            <span>r</span>
+            <span>y</span>
+        </h1>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="images/g1.jpg" alt="">
+                <div class="content">
+                    <h3>Jatayu nature park</h3>
+                    <p>Jatayu Earth Center, also known as Jatayu Nature Park or Jatayu Rock, is a park and tourism centre at Chadayamangalam in Kollam district of Kerala, India    </p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/g2.jpg" alt="">
+                <div class="content">
+                    <h3>Marvanthe Beach </h3>
+                    <p>Maravanthe is a uniquely positioned beach in Coastal Karnataka with Arabian Sea on one side and Souparnika river on the other</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/g3.jpg" alt="">
+                <div class="content">
+                    <h3>Niagara falls</h3>
+                    <p>Niagara Falls is a group of three waterfalls at the southern end of Niagara Gorge, spanning the border between the province of Ontario in Canada and the state of New York in the United States.</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/g4.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus labore vel quas atque, aperiam quo cumque exercitationem quisquam minus odio unde sit quis natus adipisci a iusto perspiciatis. Autem, iure?</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/g5.jpg" alt="">
+                <div class="content">
+                    <h3>Konark Sun temple</h3>
+                    <p>Konark Sun Temple is a 13th-century CE Sun temple at Konark about 35 kilometres northeast from Puri city on the coastline in Puri district, Odisha, India. </p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/g6.jpg" alt="">
+                <div class="content">
+                    <h3>Jog Falls</h3>
+                    <p>Jog Falls is a waterfall on the Sharavati river located in Siddapura taluk, Uttara Kannada District and it's view point located in Shimoga district of Karnataka </p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/g7.jpg" alt="">
+                <div class="content">
+                    <h3>Kavaledurga Fort</h3>
+                    <p>Kavaledurga is a fort resting on the top of a hill amidst a dense forest and it requires a trek of at least 5 km to reach the summit. </p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+        </div>
+    </secton>
+
+
+                         <!--     ...... Review .........    -->
+    <secton class="review" id="review">
+        <h1 class="heading">
+            <span>r</span>
+            <span>e</span>
+            <span>v</span>
+            <span>i</span>
+            <span>e</span>
+            <span>w</span>
+        </h1>
+        <div class="review-slider">
+            <!-- <div class="wrapper"> -->
+                <div class="slider">
+                    <div class="box">
+                        <img src="images/r1.jpeg" alt="">
+                        <h3>Ragunath( TejKumar )</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum a aliquid quod molestias ab ipsum, id excepturi consectetur ratione veritatis nesciunt libero maxime voluptatum voluptates perspiciatis quam possimus, hic numquam!</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="box">
+                        <img src="images/r4.jpg" alt="">
+                        <h3>Kriti Sanon</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum a aliquid quod molestias ab ipsum, id excepturi consectetur ratione veritatis nesciunt libero maxime voluptatum voluptates perspiciatis quam possimus, hic numquam!</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="box">
+                        <img src="images/r3.jpg" alt="">
+                        <h3>Dhanush Shetty</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum a aliquid quod molestias ab ipsum, id excepturi consectetur ratione veritatis nesciunt libero maxime voluptatum voluptates perspiciatis quam possimus, hic numquam!</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="box">
+                        <img src="images/r2.jpg" alt="">
+                        <h3>Anush</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum a aliquid quod molestias ab ipsum, id excepturi consectetur ratione veritatis nesciunt libero maxime voluptatum voluptates perspiciatis quam possimus, hic numquam!</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            <!-- </div> -->
+        </div>
+    </secton>
+
+                              <!--     ......     Contact     .........    -->    
+    <secton class="contact" id="contact">
+        <h1 class="heading">
+            <span>c</span>
+            <span>0</span>
+            <span>n</span>
+            <span>t</span>
+            <span>a</span>
+            <span>c</span>
+            <span>t</span>
+        </h1>
+
+        <div class="row">
+            <div class="image">
+                <img src="images/contact.jpg" alt="">
+            </div>
+
+            <form action="">
+                <div class="inputbox">
+                    <input type="text" placeholder="name">
+                    <input type="email" placeholder="email">
+                </div>
+                <div class="inputbox">
+                    <input type="number" placeholder="number">
+                    <input type="text" placeholder="subject">
+                </div>
+                <textarea placeholder="message" id="" cols="30" rows="10"></textarea>
+                <input type="submit" class="btn" value="send message">
+            </form>
+        </div>
+    </section>
+
+          <!--     ......     Brands logo    .........    -->    
+    <section class="brand-container">
+        <div class="wrapper">
+            <div><img src="images/b1.png" alt=""></div>
+            <div><img src="images/b2.png" alt=""></div>
+            <div><img src="images/b3.png" alt=""></div>
+            <div><img src="images/b4.png" alt=""></div>  
+            <div><img src="images/b5.png" alt=""></div>  
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>about us</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab in, nulla nostrum doloribus consectetur vero ratione ducimus? Laudantium, quae illum saepe nam, modi accusamus iste ut sequi, eum nobis ipsam?</p>
+            </div>
+
+            <div class="box">
+                <h3>branch location</h3>
+                <a href="#">India</a>
+                <a href="#">Israel</a>
+                <a href="#">Russia</a>
+                <a href="#">Tuvalu</a>
+                <a href="#">Indonasia</a>
+                <a href="#">Cyprus</a>
+                <a href="#">Nepal</a>                
+            </div>
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="#">home</a>
+                <a href="#">book</a>
+                <a href="#">packages</a>
+                <a href="#">services</a>
+                <a href="#">reviews</a>
+                <a href="#">contacts</a>
+                <a href="#">Nepal</a>                
+            </div>
+            <div class="box">
+                <h3>Follow us</h3>
+                <a href="#">FaceBook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+                <a href="#">Linkedin</a>               
+            </div>
+        </div>
+        <h1 class=" ">created by <span> Mr Dhanush Shetty</span> | all rghts reserved!</h1>
+    </section>
+
+
+    <script src="travel.js"></script>
+</body>
+</html>
